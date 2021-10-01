@@ -1,0 +1,29 @@
+## Documentaion: http://127.0.0.1:8000/docs
+## Documentaion: http://127.0.0.1:8000/redoc
+GET http://127.0.0.1:8000/books
+###
+###
+GET http://127.0.0.1:8000/book/1
+###
+###
+POST http://127.0.0.1:8000/books
+Content-Type: application/json
+
+{
+    "title" : "Intro to FastAPI v2",
+    "description" : "Book about intro to FastAPI and developments"
+}
+###
+###
+PUT http://127.0.0.1:8000/book/1
+Content-Type: application/json
+
+{
+    "title" : "New Intro to FastAPI",
+    "description" : "Book about intro to FastAPI and developments"
+}
+###
+###
+DELETE http://127.0.0.1:8000/book/2
+###
+###
